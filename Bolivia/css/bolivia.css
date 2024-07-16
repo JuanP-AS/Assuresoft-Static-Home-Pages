@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    @font-face {
+        font-family: 'Helvetica';
+        font-weight: 400;
+        src: url(https://fonts.cdnfonts.com/s/62895/HelveticaNeueRoman.woff) format('woff')
+    }
+
+    @font-face {
+        font-family: 'Helvetica';
+        font-weight: 700;
+        src: url(https://fonts.cdnfonts.com/s/62895/HelveticaNeueBold.woff) format('woff')
+    }
+
+    @font-face {
+        font-family: 'Gilroy';
+        font-weight: 700;
+        src: url('../assets/GilroyBold.ttf') format('truetype');
+    }
+
+    body {
+        font-family: 'Helvetica', sans-serif;
+    }
+
+
+    .font-gilroy {
+        font-family: 'Gilroy', sans-serif;
+    }
+
+}
+

@@ -5,28 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./css/bolivia.css">
+  <script defer src="./js/bolivia.js"></script>
   <title>Assuresoft | Bolivia</title>
 </head>
 <body class="bg-black text-[#F7F8F8] flex-col justify-center text-[14px] ">
-    <header class="flex flex-row flex-wrap gap-y-2 sm:justify-around items-center font-bold py-[40px] px-[100px]">
-        <div class="xl:w-1/4 w-full flex justify-center">
-            <img src="./assets/assuresoft.svg" alt="Logo de Assuresoft">
+    <header>
+        <nav class="flex flex-row flex-wrap gap-y-2 sm:justify-around items-center font-bold py-[40px] px-[100px]">
+            <div class="md:w-1/4 flex w-full justify-center">
+                <img src="./assets/assuresoft.svg" alt="Logo de Assuresoft">
+            </div>
+            <div class="md:w-1/4 md:flex hidden justify-center">
+                <a href="#services">Servicios</a>
+            </div>
+            <div class="md:w-1/4 md:flex hidden justify-center">
+                <a href="#team">Nuestro Equipo</a>
+            </div>
+            <div class="md:w-1/4 md:flex hidden justify-center">
+                <a href="#values">Nuestros valores</a>
+            </div>
+        </nav>
+        <div onClick=showSidebar() class="md:hidden bg-zinc-600/30 rounded border-white/20 border-[0.5px] cursor-pointer w-[30px] h-[30px] top-[40px] sm:left-[40px] left-[10px] fixed z-30">
+            <img src="./assets/burger-menu.svg" alt="Menu">
         </div>
-        <div class="md:w-1/4 sm:w-1/3 w-full flex justify-center">
-            <a href="#services">Servicios</a>
-        </div>
-        <div class="md:w-1/4 sm:w-1/3 w-full flex justify-center">
-            <a href="#team">Nuestro Equipo</a>
-        </div>
-        <div class="md:w-1/4 sm:w-1/3 w-full flex justify-center">
-            <a href="#values">Nuestros valores</a>
-        </div>
+        <div id="backdrop" onClick=hideSidebar(event) class="md:hidden hidden fixed z-40 bg-black/70 h-full top-0 left-0 w-full"></div>
+        <sidebar id="sidebar" class="fixed z-50 bg-zinc-950 h-full top-0 left-[-100%] min-[507px]:w-1/3 w-3/4 md:hidden transition-all duration-300">
+            <nav class="font-bold text-[16px] flex flex-col gap-y-[36px] p-5">
+                <div class="w-full h-[21px] justify-center">
+                    <a onClick=hideSidebar() href="#services">Servicios</a>
+                </div>
+                <div class="w-full h-[21px] justify-center">
+                    <a onClick=hideSidebar() href="#team">Nuestro Equipo</a>
+                </div>
+                <div class="w-full h-[21px] justify-center">
+                    <a onClick=hideSidebar() href="#values">Nuestros valores</a>
+                </div>
+            </nav>
+        </sidebar>
     </header>
     <main>
         <section class="flex flex-wrap h-fit">
             <div class="md:w-1/2 w-full h-[588px] flex justify-center items-center bg-[url('./assets/waves.jpg')]
                 bg-contain bg-no-repeat bg-center relative before:content-[''] before:absolute before:w-full before:h-full before:bg-black/40">
-                <p class="sm:text-[60px] text-[40px] text-center leading-[90px] shadow-[inset_0_0_16px_0_#00000014] font-gilroy font-bold md:w-[402px] w-full px-[30px] md:px-0 relative z-10">
+                <p class="sm:text-[60px] opacity-70 text-[40px] text-center leading-[90px] shadow-[inset_0_0_16px_0_#00000014] font-gilroy font-bold md:w-[402px] w-full px-[30px] md:px-0 relative z-10">
                     Impulsamos el Futuro del Desarrollo de Software
                 </p>
             </div>

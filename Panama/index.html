@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./css/panama.css">
+  <script defer src="./js/panama.js"></script>
+  <link rel="icon" href="../common/assets/favicon.ico" type="image/x-icon">
+  <title>Assuresoft | Panama</title>
+</head>
+<body class="bg-[#F7F8F8] text-[#F7F8F8] flex-col justify-center items-center 2xl:text-[20px] text-[14px]">
+    <header class="bg-[#24262D]">
+        <nav class="min-[932px]:flex hidden flex-wrap gap-[16px] md:justify-between font-bold md:py-[40px] pt-[20px] md:px-[100px]">
+            <div class="md:flex hidden w-[170px] md:justify-center md:pl-0 pl-[50px] flex-wrap">
+                <img src="./assets/assuresoft.svg" class="w-[170px]" alt="Logo de Assuresoft">
+            </div>
+            <div class="md:flex hidden justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('how')">Comó lo hacemos</span>
+            </div>
+            <div class="md:flex hidden justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('services')">Servicios y experiencia</span>
+            </div>
+            <div class="md:flex hidden justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('what')">Lo que hacemos</span>
+            </div>
+            <div class="md:flex hidden justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('values')">Nuestros valores</span>
+            </div>
+        </nav>
+        <div class="min-[932px]:hidden flex items-center py-[10px] px-[9px] gap-[10px] top-0 left-0 fixed bg-[#24262D] w-full z-30">
+            <img onClick=showSidebar() src="../common/assets/burger-menu.svg" alt="Menu" class="w-[30px] h-[30px] bg-zinc-600/30 rounded border-white/20 border-[0.5px] cursor-pointer">
+            <div class="flex items-center md:pl-0 flex-wrap pb-[6px]">
+                <img src="./assets/assuresoft.svg" class="w-[170px]" alt="Logo de Assuresoft">
+            </div>
+        </div>
+        <div id="backdrop" onClick=hideSidebar() class="md:hidden hidden fixed z-40 bg-black/70 h-full top-0 left-0 w-full"></div>
+        <sidebar id="sidebar" class="fixed z-50 bg-zinc-950 h-full top-0 left-[-100%] min-[507px]:w-1/3 w-3/4 md:hidden transition-all duration-300">
+            <nav class="font-bold text-[16px] flex flex-col gap-y-[36px] p-5">
+                <div class="w-full h-[21px] justify-center">
+                    <span class="cursor-pointer" onClick="scrollToId('how')">Comó lo hacemos</span>
+                </div>
+                <div class="w-full h-[21px] justify-center">
+                    <span class="cursor-pointer" onClick="scrollToId('services')">Servicios y experiencia</span>
+                </div>
+                <div class="w-full h-[21px] justify-center">
+                    <span class="cursor-pointer" onClick="scrollToId('what')">Lo que hacemos</span>
+                </div>
+                <div class="w-full h-[21px] justify-center">
+                    <span class="cursor-pointer" onClick="scrollToId('values')">Nuestros valores</span>
+                </div>
+            </nav>
+        </sidebar>
+    </header>
+    <main class="flex flex-col items-center overflow-x-hidden">
+        <section id="how" class="relative w-full bg-[#363942] lg:h-[612px] flex items-center justify-center">
+            <div class="bg-[url(./assets/public.jpg)] bg-no-repeat bg-cover bg-[center_50%] w-full opacity-[8%] h-full absolute top-0 left-0 z-[0]"></div>
+            <div class="max-w-[1530px] w-full lg:h-[612px] flex items-center relative sm:p-[100px] px-[20px] pt-[50px] pb-[20px]">
+                <div class="flex flex-col gap-y-[16px] lg:w-1/2 w-full z-[1] font-poppins">
+                    <p class="text-[40px] font-bold">
+                    Soluciones en Desarrollo de Software que <br class="xl:block hidden"/><span class="text-[#B81736]">impulsan tu negocio</span>
+                    </p>
+                    <p>
+                    En AssureSoft la tecnología se convierte en el motor de tu crecimiento empresarial. Desde nuestro inicio, nos hemos destacado como líderes en servicios de desarrollo de software nearshore, estableciendo una sólida presencia en Panamá. En AssureSoft, creemos en la combinación perfecta entre precisión operativa y compromiso con el cliente, ofreciendo soluciones personalizadas que impulsan el éxito de cada proyecto.
+                    </p>
+                </div>
+                <img src="./assets/laptop.png" alt="Laptop" class="aspect-[10/7] lg:block hidden w-[1212px] absolute xl:top-0 top-[15px] xl:right-[-14%] right-[-30%]">
+            </div>
+        </section>
+        <section id="services" class="max-w-[1530px] w-full text-black lg:pt-[160px] pt-[40px] md:px-[100px] px-[20px] flex flex-col items-center gap-y-[36px]">
+            <h2 class="2xl:text-[40px] text-[32px] sm:text-left text-center font-poppins font-bold">Servicios y experiencia</h2>
+            <p>
+              Ofrecemos mucho más que simples soluciones tecnológicas. Nos enorgullecemos de proporcionar una amplia gama de servicios de desarrollo de software para satisfacer las necesidades de diversos sectores empresariales. Nos comprometemos a ofrecer eficiencia, escalabilidad e integración de tecnología de vanguardia en cada proyecto.
+            </p>
+        </section>
+        <section id="what" class="max-w-[1530px] w-full text-black py-[36px] flex flex-col items-center gap-y-[36px]">
+            <h2 class="2xl:text-[40px] text-[32px] font-poppins font-bold">Lo que hacemos</h2>
+            <div class="flex w-full lg:px-[100px] px-[20px] flex-wrap gap-[16px] justify-center font-poppins">
+                <div class="2xl:w-[430px] lg:w-[400px] md:w-[350px] sm:w-[300px] w-full sm:min-h-[140px] p-[16px] rounded-[16px] border-[#B81736] border-[1px] bg-[#F7F8F8] flex sm:flex-row flex-col items-center gap-[10px]">
+                    <div class="flex-shrink-0 size-[88px] flex justify-center items-center">
+                        <img src="./assets/wwd-1.svg" class="size-[40px]" alt="Outsourcing icon">
+                    </div>
+                    <div class="flex flex-col sm:items-start items-center gap-[10px]">
+                        <span class="font-bold 2xl:text-[20px] text-[16px] text-center md:text-left">
+                            Staff Augmentation
+                        </span>
+                        <p class="leading-[18px]">
+                            Refuerza tu equipo con profesionales especializados, cuidadosamente seleccionados y evaluados por AssureSoft.
+                        </p>
+                    </div>
+                </div>
+                <div class="2xl:w-[430px] lg:w-[400px] md:w-[350px] sm:w-[300px] w-full sm:min-h-[140px] p-[16px] rounded-[16px] border-[#B81736] border-[1px] bg-[#F7F8F8] flex sm:flex-row flex-col items-center gap-[10px]">
+                    <div class="flex-shrink-0 size-[88px] flex justify-center items-center">
+                        <img class="w-[48px] h-[40px]" src="./assets/wwd-2.svg" alt="Outsourcing icon">
+                    </div>
+                    <div class="flex flex-col sm:items-start items-center gap-[10px]">
+                        <span class="font-bold 2xl:text-[20px] text-[16px] text-center md:text-left">
+                            Software Develpment Team
+                        </span>
+                        <p class="leading-[18px]">
+                            Impulsa el éxito de tu proyecto con un equipo de desarrollo de AssureSoft que trabajará en conjunto con tu equipo interno para obtener resultados excepcionales.
+                        </p>
+                    </div>
+                </div>
+                <div class="2xl:w-[430px] lg:w-[400px] md:w-[350px] sm:w-[300px] w-full sm:min-h-[140px] p-[16px] rounded-[16px] border-[#B81736] border-[1px] bg-[#F7F8F8] flex sm:flex-row flex-col items-center gap-[10px]">
+                    <div class="flex-shrink-0 size-[88px] flex justify-center items-center">
+                        <img class="w-[43px] h-[40px]" src="./assets/wwd-3.svg" alt="Outsourcing icon">
+                    </div>
+                    <div class="flex flex-col sm:items-start items-center gap-[10px]">
+                        <span class="font-bold 2xl:text-[20px] text-[16px] text-center md:text-left">
+                            Software Outsourcing
+                        </span>
+                        <p class="leading-[18px]">
+                            Delega todo tu proyecto de desarrollo de software a un equipo de AssureSoft, que se encargará de realizar tu visión con mínima intervención de tu parte.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="values" class="w-full text-white bg-[#B81736] pt-[40px] flex flex-col items-center gap-y-[36px]">
+            <h2 class="2xl:text-[40px] text-[32px] font-gilroy font-bold">Nuestros valores</h2>
+            <div id="panels" class="flex w-full flex-wrap justify-center 2xl:text-[20px] text-[16px] font-poppins cursor-pointer">
+                <div class="panel lg:w-1/5 sm:w-1/2 w-full sm:aspect-[2/3] aspect-[2/1] flex justify-center items-center overflow-hidden relative before:left-0 bg-[url(./assets/value1.jpg)] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-t before:from-[#B81736] before:to-transparent">
+                    <span class="shake-target 2xl:text-[36px] text-[28px] font-bold relative">Compromiso</span>
+                    <div class="hidden-description absolute px-[20px] flex justify-center items-center bottom-[-100%] left-0 w-full h-full bg-[#B81736] transition-all duration-300 select-none">
+                        Nos comprometemos a entender las necesidades únicas de cada cliente y a ofrecer soluciones que superen sus expectativas.
+                    </div>
+                </div>
+                <div class="panel lg:w-1/5 sm:w-1/2 w-full sm:aspect-[2/3] aspect-[2/1] flex justify-center items-center overflow-hidden relative before:left-0 bg-[url(../common/assets/value2.jpg)] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-t before:from-[#B81736] before:to-transparent">
+                    <span class="shake-target 2xl:text-[36px] text-[28px] font-bold relative">Calidad</span>
+                    <div class="hidden-description absolute px-[20px] flex justify-center items-center bottom-[-100%] left-0 w-full h-full bg-[#B81736] transition-all duration-300 select-none">
+                      Nos esforzamos por mantener los más altos estándares de calidad en cada proyecto que emprendemos, garantizando resultados excepcionales y duraderos.
+                    </div>
+                </div>
+                <div class="panel lg:w-1/5 sm:w-1/2 w-full sm:aspect-[2/3] aspect-[2/1] flex justify-center items-center overflow-hidden relative before:left-0 bg-[url(./assets/value3.jpg)] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-t before:from-[#B81736] before:to-transparent">
+                    <span class="shake-target 2xl:text-[36px] text-[28px] font-bold relative">Colaboración</span>
+                    <div class="hidden-description absolute px-[20px] flex justify-center items-center bottom-[-100%] left-0 w-full h-full bg-[#B81736] transition-all duration-300 select-none">
+                      Creemos en el poder de trabajar juntos, tanto con nuestros clientes como dentro de nuestro equipo, para lograr resultados sobresalientes.
+                    </div>
+                </div>
+                <div class="panel lg:w-1/5 sm:w-1/2 w-full sm:aspect-[2/3] aspect-[2/1] flex justify-center items-center overflow-hidden relative before:left-0 bg-[url(./assets/value4.jpg)] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-t before:from-[#B81736] before:to-transparent">
+                    <span class="shake-target 2xl:text-[36px] text-[28px] font-bold relative">Innovación</span>
+                    <div class="hidden-description absolute px-[20px] flex justify-center items-center bottom-[-100%] left-0 w-full h-full bg-[#B81736] transition-all duration-300 select-none">
+                      Abrazamos la innovación y la creatividad en todo lo que hacemos, siempre buscando nuevas formas de mejorar y avanzar.
+                    </div>
+                </div>
+                <div class="panel lg:w-1/5 w-full aspect-[2/1] flex justify-center items-center overflow-hidden relative before:left-0 bg-[url(../common/assets/value5.jpg)] bg-cover bg-no-repeat bg-center before:content-[''] before:absolute before:w-full before:h-full before:bg-gradient-to-t before:from-[#B81736] before:to-transparent">
+                    <span class="shake-target 2xl:text-[36px] text-[26px] font-bold relative">Transparencia</span>
+                    <div class="hidden-description absolute px-[20px] flex justify-center items-center bottom-[-100%] left-0 w-full h-full bg-[#B81736] transition-all duration-300 select-none">
+                      Mantenemos una comunicación abierta y transparente en todas nuestras interacciones, construyendo relaciones de confianza con nuestros clientes y socios.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="flex flex-col gap-[16px] sm:py-[40px] py-[10px] sm:px-[100px] px-[20px] bg-[#B81736] font-poppins">
+        <p class="2xl:text-[20px] text-[16px] font-bold ">
+            Contacto
+        </p>
+        <p class="leading-[200%]">
+            Calle 47 y Aquilino de la Guardia,<br/>
+            Torre Ocean Business Plaza Piso 15 of. 7<br/>
+            Bella Vista, Panamá<br/>
+            (507) 3406917<br/>
+            <a href="mailto:info@assuresoft.com" class="underline">info@assuresoft.com</a><br/>
+        </p>
+    </footer>
+</body>
+</html>

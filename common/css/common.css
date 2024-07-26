@@ -1,19 +1,22 @@
 @font-face {
     font-family: 'Helvetica';
     font-weight: 400;
-    src: url(https://fonts.cdnfonts.com/s/62895/HelveticaNeueRoman.woff) format('woff')
+    src: url(https://fonts.cdnfonts.com/s/62895/HelveticaNeueRoman.woff) format('woff');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Helvetica';
     font-weight: 700;
-    src: url(https://fonts.cdnfonts.com/s/62895/HelveticaNeueBold.woff) format('woff')
+    src: url(https://fonts.cdnfonts.com/s/62895/HelveticaNeueBold.woff) format('woff');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Gilroy';
     font-weight: 700;
     src: url('../assets/GilroyBold.ttf') format('truetype');
+    font-display: swap;
 }
 
 body {

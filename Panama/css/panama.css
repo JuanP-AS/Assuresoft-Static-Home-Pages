@@ -26,6 +26,16 @@
         animation: shake 0.5s;
     }
 
+    .hidden-description {
+        bottom: -100%;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        div:hover > .hidden-description {
+            bottom: 0;
+        }
+    }
+
     @keyframes shake {
         0% {
             transform: translateX(0) rotateZ(0);

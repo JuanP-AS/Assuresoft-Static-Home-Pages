@@ -17,7 +17,12 @@ const createClickHandler = (panel) => {
     let isShown = false;
     const description = panel.querySelector(".hidden-description");
     return () => {
-        description.style.bottom = isShown ? "-100%" : "0";
+        console.log("styles", description.style);
+        if (isShown) {
+            description.style = {};
+        } else {
+            description.style.bottom = "0";
+        }
         isShown = !isShown;
     }
 }

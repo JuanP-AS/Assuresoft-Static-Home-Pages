@@ -1,7 +1,5 @@
 User-agent: *
-Disallow: /Bolivia/
-Disallow: /Panama/
-Disallow: /Paraguay/
+Disallow: /
 Allow: /Bolivia/index.html
 Allow: /Panama/index.html
 Allow: /Paraguay/index.html

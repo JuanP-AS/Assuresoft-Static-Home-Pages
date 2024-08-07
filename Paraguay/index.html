@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../common/css/common.css">
+  <link rel="stylesheet" href="./css/paraguay.css">
+  <script defer src="./js/paraguay.js"></script>
+  <link rel="icon" href="../common/assets/favicon.ico" type="image/x-icon">
+  <title>Assuresoft | Paraguay</title>
+</head>
+<body class="text-[#F7F8F8] 2xl:text-[18px] text-[14px] font-satoshi bg-[#363942]">
+    <header class="flex flex-col items-center w-full bg-[#24262D] font-helvetica">
+        <nav class="min-[900px]:flex hidden flex-wrap gap-x-[16px] md:justify-between font-bold md:py-[40px] pt-[20px] md:px-[100px] w-full max-w-[1440px]">
+            <div class="md:flex hidden md:justify-center md:pl-0 pl-[50px] flex-wrap">
+                <img src="./assets/assuresoft.svg" class="w-[170px] h-[27px]" alt="Logo de Assuresoft">
+            </div>
+            <div class="md:flex hidden justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('who')">Quiénes somos</span>
+            </div>
+            <div class="md:flex hidden justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('culture')">Nuestra cultura</span>
+            </div>
+            <div class="md:flex hidden justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('values')">Nuestros valores</span>
+            </div>
+            <div class="md:flex hidden justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('solutions')">Nuestras soluciones</span>
+            </div>
+        </nav>
+        <div class="min-[900px]:hidden flex items-center py-[10px] px-[9px] gap-[10px] top-0 left-0 fixed bg-black w-full z-30">
+            <img onClick=showSidebar() src="../common/assets/burger-menu.svg" alt="Menu" class="w-[30px] h-[30px] bg-zinc-600/30 rounded border-white/20 border-[0.5px] cursor-pointer">
+            <div class="flex items-center min-[900px]:pl-0 flex-wrap pb-[6px]">
+                <img src="./assets/assuresoft.svg" class="w-[170px]" alt="Logo de Assuresoft">
+            </div>
+        </div>
+        <div id="backdrop" onClick=hideSidebar() class="min-[900px]:hidden hidden fixed z-40 bg-black/70 h-full top-0 left-0 w-full"></div>
+        <sidebar id="sidebar" class="fixed z-50 bg-zinc-950 h-full top-0 left-[-100%] min-[507px]:w-1/3 w-3/4 min-[900px]:hidden transition-all duration-300">
+        <nav class="font-bold 2xl:text-[22px] text-[16px] flex flex-col gap-y-[36px] p-5">
+            <div class="w-full h-[21px] justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('who')">Quiénes somos</span>
+            </div>
+            <div class="w-full h-[21px] justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('culture')">Nuestra cultura</span>
+            </div>
+            <div class="w-full h-[21px] justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('values')">Nuestros valores</span>
+            </div>
+            <div class="w-full h-[21px] justify-center">
+                <span class="cursor-pointer" onClick="scrollToId('solutions')">Nuestras soluciones</span>
+            </div>
+        </nav>
+        </sidebar>
+    </header>
+    <main class="flex flex-col items-center">
+        <section id="who" class="w-full flex justify-center lg:h-[600px] bg-gradient-to-l from-white/0 to-[#2196F333] bg-[#363942] overflow-hidden">
+            <div class="max-w-[1440px] w-full flex flex-wrap lg:flex-nowrap lg:justify-between relative justify-center items-center xl:gap-x-[100px] gap-x-[50px] gap-y-[50px] xl:p-[100px] lg:pl-[45px] lg:p-[30px] sm:p-[40px] p-[20px] max-[900px]:pt-[80px]">
+                <img src="./assets/dude-bg.svg" class="lg:w-[884px] lg:h-[667px] sm:w-10/12 w-full absolute lg:top-0 min-[900px]:top-[-70px] sm:top-[30px] top-[80px] lg:left-[-124px]  z-0" alt="Dude bg">
+                <div class="lg:w-1/3 sm:w-7/12 w-10/12 relative h-fit flex-shrink-0">
+                    <div class="sm:size-[88px] size-[70px] absolute sm:top-[-10px] sm:left-[-40px] top-[-5px] left-[-25px] z-[0] bg-[#5E9CD1] rounded-full p-[16px] flex justify-center items-center">
+                        <img src="./assets/phone.svg" class="sm:w-[42px] sm:h-[54px] w-[32px] h-[44px]" alt="Phone">
+                    </div>
+                    <img src="./assets/dude.webp" class="w-full aspect-square relative" alt="Dude">
+                    <div class="sm:size-[120px] size-[80px] absolute sm:bottom-[-45px] sm:right-[-25px] bottom-[-25px] right-[-5px] bg-[#5E9CD1] rounded-full p-[16px] flex justify-center items-center">
+                        <img src="./assets/pc.svg" class="sm:w-[70px] sm:h-[85px] w-[50px] h-[55px]" alt="Phone">
+                    </div>
+                </div>
+                <div class="flex-grow max-w-[730px] flex flex-col gap-y-[40px] justify-center z-10">
+                    <p class="text-[#5E9CD1] text-[45px] font-bold leading-none">
+                        Soluciones Nearshore para Impulsar tu Empresa
+                    </p>
+                    <p class="2xl:text-[28px] text-[24px] font-bold">
+                        Quiénes somos
+                    </p>
+                    <p>
+                        Desde 2018, somos una empresa líder en servicios nearshore de desarrollo de software. Creemos que una gran experiencia del cliente y la excelencia en nuestro servicio son los pilares del éxito empresarial. Permitimos que empresas de cualquier tamaño, sector y ubicación se centren en lo que mejor saben hacer, mientras aplicamos nuestra experiencia en el desarrollo de software de sus productos y servicios. Nos apasiona crear soluciones destinadas a resolver problemas empresariales y añadir valor a la vida de las personas.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="culture" class="flex flex-col items-center w-full min-h-[725px] relative lg:px-[100px] sm:px-[40px] px-[20px] py-[40px] max-[900px]:pt-[50px] gap-y-[36px] overflow-hidden">
+            <img src="./assets/new-year.webp" class="w-full h-[130%] opacity-[12%] absolute top-0 left-0 z-[-1] max-md:hidden" alt="Culture bg">
+            <h2 class="font-gilroy font-bold text-center 2xl:text-[40px] text-[32px]">
+                ¿Por qué trabajar con equipos de desarrolladores nearshore?
+            </h2>
+            <div class="flex lg:gap-[32px] gap-[16px] lg:justify-between justify-center 2xl:text-[20px] text-[16px] max-w-[1440px] max-lg:flex-wrap">
+                <div class="lg:w-1/3 md:w-[325px] w-full md:min-h-[210px] min-h-[150px] p-[16px] flex flex-col gap-y-[10px] rounded-[16px] bg-[#5E9CD1]">
+                    <p class="font-bold">
+                        Zonas horarias optimizadas
+                    </p>
+                    <p>
+                        Nuestra cercanía geográfica y disponibilidad de nuestros equipos garantizan una comunicación y colaboración fluidas.
+                    </p>
+                </div>
+                <div class="lg:w-1/3 md:w-[325px] w-full md:min-h-[210px] min-h-[150px] p-[16px] flex flex-col gap-y-[10px] rounded-[16px] bg-[#5E9CD1]">
+                    <p class="font-bold">
+                        Sinergia cultural
+                    </p>
+                    <p>
+                        Nuestro enfoque reúne lo mejor de ambos mundos. Con desarrolladores experimentados, garantizamos una rica mezcla de experiencia que asegura una profunda comprensión de las prácticas y expectativas empresariales occidentales.
+                    </p>
+                </div>
+                <div class="lg:w-1/3 md:w-[325px] w-full md:min-h-[210px] min-h-[150px] p-[16px] flex flex-col gap-y-[10px] rounded-[16px] bg-[#5E9CD1]">
+                    <p class="font-bold">
+                        Gestión de proyectos Agile y Scrum
+                    </p>
+                    <p>
+                        Nuestros equipos operan en marcos ágiles, garantizando la colaboración en tiempo real y la entrega eficiente de los proyectos.
+                    </p>
+                </div>
+            </div>
+            <div class="flex relative w-full max-w-[1440px] flex-grow">
+                <div class="flex flex-col justify-center md:items-start items-center md:w-1/2 w-full gap-y-[10px]">
+                    <p class="font-bold 2xl:text-[40px] text-[32px]">
+                        Nuestra cultura
+                    </p>
+                    <p>
+                        Fomentamos una cultura de empoderamiento y motivación con nuestro enfoque al desarrollo personal y profesional. La diversidad y la pasión en el lugar de trabajo crean relaciones armoniosas dentro de nuestra comunidad y excelentes resultados en todos nuestros proyectos. Con la integración de la vida laboral y personal como motor de nuestro éxito, disfrutamos de un entorno de trabajo productivo, respaldado por actividades de participación de los colaboradores durante todo el año, oportunidades de crecimiento profesional y una sólida diversidad en la gestión.
+                    </p>
+                    <img src="./assets/business-dude.webp" class="w-2/3 xl:max-w-[826px] absolute right-[-100px] 2xl:bottom-[-200px] xl:bottom-[-150px] md:bottom-[-80px] md:block hidden" alt="Business dude">
+                </div>
+            </div>
+        </section>
+        <section id="values" class="flex flex-col w-full items-center bg-[#5E9CD1] lg:rounded-t-[36px] rounded-t-[18px] pt-[40px] max-[900px]:pt-[50px] lg:gap-y-[40px] sm:gap-y-[20px] gap-y-[10px]">
+            <h2 class="2xl:text-[42px] text-[32px] font-bold text-center lg:px-[100px] sm:px-[40px] px-[20px]">
+                Nuestros valores fundamentales
+            </h2>
+            <div class="flex flex-wrap w-full text-center">
+                <div class="md:w-1/2 w-full flex relative max-sm:py-[20px] max-sm:min-h-[200px]">
+                    <div class="bg-[url(../common/assets/value1.webp)] bg-cover bg-no-repeat bg-center w-1/2 aspect-square max-sm:absolute max-sm:w-full max-sm:h-full z-[0]">
+                        <div class="w-full h-full bg-black/40 sm:hidden"></div>
+                    </div>
+                    <div class="sm:w-1/2 flex flex-col gap-y-[10px] justify-center items-center z-10">
+                        <p class="2xl:text-[32px] text-[28px] font-bold">
+                            Servicio
+                        </p>
+                        <p class="lg:w-9/12 w-10/12">
+                            Nos apasiona lo que hacemos y nos esforzamos por alcanzar la excelencia en todo lo que emprendemos.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full flex max-md:order-3 relative max-sm:py-[20px] max-sm:min-h-[200px]">
+                    <div class="bg-[url(../common/assets/value2.webp)] bg-cover bg-no-repeat bg-center w-1/2 aspect-square max-sm:absolute max-sm:w-full max-sm:h-full z-[0]">
+                        <div class="w-full h-full bg-black/40 sm:hidden"></div>
+                    </div>
+                    <div class="sm:w-1/2 flex flex-col gap-y-[10px] justify-center items-center z-10">
+                        <p class="2xl:text-[32px] text-[28px] font-bold">
+                            Transparencia
+                        </p>
+                        <p class="lg:w-9/12 w-10/12">
+                            Mantenemos la profesionalidad, la integridad y la responsabilidad, siendo abiertos e informativos sobre los puntos cruciales.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full flex max-md:order-2 relative max-sm:py-[20px] max-sm:min-h-[200px]">
+                    <div class="sm:w-1/2 flex flex-col gap-y-[10px] justify-center items-center z-10">
+                        <p class="2xl:text-[32px] text-[28px] font-bold">
+                            Excelencia
+                        </p>
+                        <p class="lg:w-9/12 w-10/12">
+                            Nos esforzamos por superar las expectativas, entregando soluciones inteligentes de manera proactiva y motivada a nuestros clientes.
+                        </p>
+                    </div>
+                    <div class="bg-[url(../common/assets/value3.webp)] bg-cover bg-no-repeat bg-center w-1/2 aspect-square max-sm:absolute max-sm:w-full max-sm:h-full z-[0]">
+                        <div class="w-full h-full bg-black/40 sm:hidden"></div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 w-full flex order-4 relative max-sm:py-[20px] max-sm:min-h-[200px]">
+                    <div class="sm:w-1/2 flex flex-col gap-y-[10px] justify-center items-center z-10">
+                        <p class="2xl:text-[32px] text-[28px] font-bold">
+                            Colaboración
+                        </p>
+                        <p class="lg:w-9/12 w-10/12">
+                            Nos adaptamos a la cultura de nuestros clientes y empleados, siempre dispuestos a aprender y abiertos a comentarios constructivos para mejorar continuamente.
+                        </p>
+                    </div>
+                    <div class="bg-[url(../common/assets/value4.webp)] bg-cover bg-no-repeat bg-center w-1/2 aspect-square max-sm:absolute max-sm:w-full max-sm:h-full z-[0]">
+                        <div class="w-full h-full bg-black/40 sm:hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="solutions" class="flex flex-col items-center gap-y-[36px] w-full py-[40px] max-[900px]:pt-[50px] xl:px-[100px] sm:px-[40px] px-[20px]">
+            <h2 class="2xl:text-[42px] text-[32px] font-bold text-center">
+                Nuestras soluciones
+            </h2>
+            <div class="w-full max-w-[1440px] gap-y-[36px] md:gap-x-[60px] gap-x-[30px] grid sm:grid-cols-2 grid-cols-1 sm:grid-rows-[repeat(4,minmax(84px,1fr))] grid-rows-[repeat(7,minmax(84px,1fr))]">
+                <div class="flex lg:flex-row flex-col lg:items-start items-center lg:justify-end gap-[20px]">
+                    <p class="2xl:text-[28px] text-[24px] font-bold lg:w-1/2 lg:text-end text-center">
+                        Software Development
+                    </p>
+                    <p class="lg:w-7/12 lg:text-start text-center">
+                        Creamos soluciones de software personalizadas, optimizadas para satisfacer las necesidades específicas de tu negocio y mejorar la eficiencia operativa.
+                    </p>
+                </div>
+                <div class="flex lg:flex-row flex-col lg:items-start items-center lg:justify-end gap-[20px]">
+                    <p class="2xl:text-[28px] text-[24px] font-bold lg:w-1/2 lg:text-end text-center">
+                        Data Engineering & Analytics
+                    </p>
+                    <p class="lg:w-7/12 lg:text-start text-center">
+                        Transformamos datos en información valiosa mediante análisis avanzados, ayudando a tomar decisiones estratégicas fundamentadas y precisas.
+                    </p>
+                </div>
+                <div class="flex lg:flex-row flex-col lg:items-start items-center lg:justify-end gap-[20px]">
+                    <p class="2xl:text-[28px] text-[24px] font-bold lg:w-1/2 lg:text-end text-center">
+                        DevOps & Infrastucture
+                    </p>
+                    <p class="lg:w-7/12 lg:text-start text-center">
+                        Implementamos prácticas DevOps para automatizar procesos y gestionar infraestructuras, garantizando despliegues rápidos y fiables.
+                    </p>
+                </div>
+                <div class="flex lg:flex-row flex-col lg:items-start items-center lg:justify-end gap-[20px]">
+                    <p class="2xl:text-[28px] text-[24px] font-bold lg:w-1/2 lg:text-end text-center">
+                        UX/UI Design
+                    </p>
+                    <p class="lg:w-7/12 lg:text-start text-center">
+                        Diseñamos interfaces de usuario intuitivas y atractivas, enfocadas en mejorar la experiencia del usuario y la usabilidad del producto.
+                    </p>
+                </div>
+                <div class="flex lg:flex-row flex-col lg:items-start items-center lg:justify-end gap-[20px]">
+                    <p class="2xl:text-[28px] text-[24px] font-bold lg:w-1/2 lg:text-end text-center">
+                        Product Management
+                    </p>
+                    <p class="lg:w-7/12 lg:text-start text-center">
+                        Guiamos el ciclo de vida del producto desde la concepción hasta el lanzamiento, asegurando alineación con los objetivos del negocio y las necesidades del mercado.
+                    </p>
+                </div>
+                <div class="flex lg:flex-row flex-col lg:items-start items-center lg:justify-end gap-[20px]">
+                    <p class="2xl:text-[28px] text-[24px] font-bold lg:w-1/2 lg:text-end text-center">
+                        Project Management
+                    </p>
+                    <p class="lg:w-7/12 lg:text-start text-center">
+                        Coordinamos y supervisamos proyectos de software, garantizando que se entreguen a tiempo, dentro del presupuesto y con la calidad esperada.
+                    </p>
+                </div>
+                <div class="flex lg:flex-row flex-col lg:items-start items-center lg:justify-end gap-[20px]">
+                    <p class="2xl:text-[28px] text-[24px] font-bold lg:w-1/2 lg:text-end text-center">
+                        Software Quality Assurance
+                    </p>
+                    <p class="lg:w-7/12 lg:text-start text-center">
+                        Realizamos pruebas rigurosas para asegurar que el software cumpla con los más altos estándares de calidad y funcione sin problemas.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="w-full h-[204px] py-[40px] xl:px-[100px] sm:px-[40px] px-[20px] bg-[#24262D] flex justify-center">
+        <div class="w-full max-w-[1440px] flex flex-col justify-between">
+            <p class="font-bold 2xl:text-[20px] text-[16px]">
+                Contacto
+            </p>
+            <p>
+                2106 Av. Santa Teresa<br/>
+                Torres del Paseo, Torre 1, Piso 25<br/>
+                Asunción, Paraguay<br/>
+                <a href="mailto:info@assuresoft.com.py">info@assuresoft.com.py</a><br/>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

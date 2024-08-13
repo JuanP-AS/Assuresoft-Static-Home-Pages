@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('../../Bolivia/css/bolivia.css');
+@import url('../../Panama/css/panama.css');
+@import url('../../Paraguay/css/paraguay.css');
+
 @font-face {
     font-family: 'Helvetica';
     font-weight: 400;
@@ -17,14 +25,5 @@
     font-weight: 700;
     src: url('../assets/GilroyBold.ttf') format('truetype');
     font-display: swap;
-}
-
-
-.font-gilroy {
-    font-family: 'Gilroy', sans-serif;
-}
-
-.font-helvetica {
-    font-family: 'Helvetica', sans-serif;
 }
 

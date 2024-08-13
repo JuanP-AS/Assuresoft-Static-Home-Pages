@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
 
     @font-face {
@@ -16,10 +12,6 @@
         font-weight: 700;
         src: url('../assets/Poppins-Bold.ttf') format('truetype');
         font-display: swap;
-    }
-
-    .font-poppins {
-        font-family: 'Poppins', sans-serif;
     }
 
     .shake {

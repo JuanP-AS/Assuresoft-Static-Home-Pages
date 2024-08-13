@@ -1,8 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: [
+      './Bolivia/**/*.{html,css}',
+      './Panama/**/*.{html,css}',
+      './Paraguay/**/*.{html,css}',
+  ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+            'helvetica': 'Helvetica, sans-serif',
+            'gilroy': 'Gilroy, sans-serif',
+            'satoshi': 'Satoshi, sans-serif',
+            'poppins': 'Poppins, sans-serif',
+        }
+    },
   },
   plugins: [],
 }

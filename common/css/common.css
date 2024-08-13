@@ -27,3 +27,35 @@
     font-display: swap;
 }
 
+.shake {
+    animation: shake 0.5s;
+}
+
+.hidden-description {
+    bottom: -100%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    div:hover > .hidden-description {
+        bottom: 0;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0) rotateZ(0);
+    }
+    25% {
+        transform: translateX(-5px) rotateZ(-5deg);
+    }
+    50% {
+        transform: translateX(5px) rotateZ(5deg);
+    }
+    75% {
+        transform: translateX(-5px) rotateZ(-5deg);
+    }
+    100% {
+        transform: translateX(0) rotateZ(0);
+    }
+}
+

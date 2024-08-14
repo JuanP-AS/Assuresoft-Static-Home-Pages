@@ -26,3 +26,8 @@ you should use this instead:
 ```html
 <div class="bg-[url(../assets/waves.webp)]"></div>
 ```
+
+## Notes on Symlinks
+For windows users I would recommend using WSL to serve the project.
+This is because of the usage of **symlinks** in the project.
+

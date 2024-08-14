@@ -1066,28 +1066,28 @@ video {
   background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/Bolivia\/assets\/waves\.webp\'\)\] {
-  background-image: url('../../Bolivia/assets/waves.webp');
+.bg-\[url\(\'\.\.\/\.\.\/assets\/waves\.webp\'\)\] {
+  background-image: url('../../assets/waves.webp');
 }
 
-.bg-\[url\(\.\.\/\.\.\/Bolivia\/assets\/AbstractParticulesBG\.webp\)\] {
-  background-image: url(../../Bolivia/assets/AbstractParticulesBG.webp);
+.bg-\[url\(\.\.\/\.\.\/assets\/AbstractParticulesBG\.webp\)\] {
+  background-image: url(../../assets/AbstractParticulesBG.webp);
 }
 
-.bg-\[url\(\.\.\/\.\.\/Bolivia\/assets\/value1\.webp\)\] {
-  background-image: url(../../Bolivia/assets/value1.webp);
+.bg-\[url\(\.\.\/\.\.\/assets\/public\.webp\)\] {
+  background-image: url(../../assets/public.webp);
 }
 
-.bg-\[url\(\.\.\/\.\.\/Bolivia\/assets\/value3\.webp\)\] {
-  background-image: url(../../Bolivia/assets/value3.webp);
+.bg-\[url\(\.\.\/\.\.\/assets\/value1\.webp\)\] {
+  background-image: url(../../assets/value1.webp);
 }
 
-.bg-\[url\(\.\.\/\.\.\/Bolivia\/assets\/value4\.webp\)\] {
-  background-image: url(../../Bolivia/assets/value4.webp);
+.bg-\[url\(\.\.\/\.\.\/assets\/value3\.webp\)\] {
+  background-image: url(../../assets/value3.webp);
 }
 
-.bg-\[url\(\.\.\/\.\.\/Panama\/assets\/public\.webp\)\] {
-  background-image: url(../../Panama/assets/public.webp);
+.bg-\[url\(\.\.\/\.\.\/assets\/value4\.webp\)\] {
+  background-image: url(../../assets/value4.webp);
 }
 
 .bg-\[url\(\.\.\/assets\/value1\.webp\)\] {

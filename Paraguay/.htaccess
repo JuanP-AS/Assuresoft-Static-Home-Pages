@@ -1,0 +1,18 @@
+# Redirect all HTTP requests to HTTPS
+#RewriteEngine On
+#RewriteCond %{HTTPS} off
+#RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Rewrite /index to /
+RewriteCond %{THE_REQUEST} \s/index[^\s]* [NC]
+RewriteRule ^index$ / [L,R=301]
+
+
+# Redirect /index or /index.html (or any index file) to the root /
+RewriteCond %{THE_REQUEST} /index(\.html|\.php|\.htm)? [NC]
+RewriteRule ^index(\.html|\.php|\.htm)?$ / [L,R=301]
+
+# Handle cases where /index or /index.html is accessed with additional path
+RewriteCond %{THE_REQUEST} /(.*/)?index(\.html|\.php|\.htm)? [NC]
+RewriteRule ^(.*)/index(\.html|\.php|\.htm)?$ /$1 [L,R=301]
+
